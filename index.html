@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fff7ed">
+    <title>پت‌لند | دنیای حیوانات خانگی</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <a class="logo" href="#">🐾 پت‌لند</a>
+        <div class="wallet">🪙 <span id="coins">100</span> سکه</div>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome">
+            <div>
+                <span class="eyebrow">دنیای دوست‌داشتنی تو</span>
+                <h1>به پت‌لند خوش اومدی! 💚</h1>
+                <p>از حیوان کوچولوت مراقبت کن و بهترین دوستش باش.</p>
+            </div>
+            <div class="welcome-icon">🌈</div>
+        </section>
+
+        <section class="pet-card">
+            <div class="pet-top">
+                <div>
+                    <span class="eyebrow">دوست کوچولوی تو</span>
+                    <h2 id="petName">پشمالو</h2>
+                    <p id="petType">گربه بازیگوش</p>
+                </div>
+                <div class="level-badge">سطح <span id="level">1</span></div>
+            </div>
+
+            <div class="pet-scene">
+                <span class="cloud cloud-one">☁️</span>
+                <span class="cloud cloud-two">☁️</span>
+                <div id="petEmoji" class="pet-emoji" aria-label="حیوان خانگی">🐱</div>
+                <div id="petMood" class="pet-mood">من گرسنه‌ام؟ نه هنوز! 😸</div>
+                <div class="ground"></div>
+            </div>
+
+            <div class="pet-stats">
+                <div class="stat">
+                    <div class="stat-label">
+                        <span>🍗 گرسنگی</span>
+                        <strong id="hungerValue">80%</strong>
+                    </div>
+                    <div class="progress">
+                        <div id="hungerBar" class="progress-fill hunger-fill"></div>
+                    </div>
+                </div>
+
+                <div class="stat">
+                    <div class="stat-label">
+                        <span>😊 شادی</span>
+                        <strong id="happinessValue">80%</strong>
+                    </div>
+                    <div class="progress">
+                        <div id="happinessBar" class="progress-fill happiness-fill"></div>
+                    </div>
+                </div>
+
+                <div class="stat">
+                    <div class="stat-label">
+                        <span>⚡ انرژی</span>
+                        <strong id="energyValue">80%</strong>
+                    </div>
+                    <div class="progress">
+                        <div id="energyBar" class="progress-fill energy-fill"></div>
+                    </div>
+                </div>
+
+                <div class="stat">
+                    <div class="stat-label">
+                        <span>🧼 تمیزی</span>
+                        <strong id="cleanValue">80%</strong>
+                    </div>
+                    <div class="progress">
+                        <div id="cleanBar" class="progress-fill clean-fill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button class="action-btn feed" id="feedBtn">
+                    <span>🍖</span> غذا دادن
+                </button>
+                <button class="action-btn play" id="playBtn">
+                    <span>🎾</span> بازی کردن
+                </button>
+                <button class="action-btn bath" id="bathBtn">
+                    <span>🛁</span> حمام
+                </button>
+                <button class="action-btn sleep" id="sleepBtn">
+                    <span>💤</span> استراحت
+                </button>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-title">
+                <div>
+                    <span class="eyebrow">انتخاب دوست</span>
+                    <h2>حیوانت رو انتخاب کن</h2>
+                </div>
+            </div>
+
+            <div class="pet-choices">
+                <button class="pet-choice selected" data-pet="cat">
+                    <span>🐱</span>
+                    <strong>گربه</strong>
+                    <small>پشمالوی دوست‌داشتنی</small>
+                </button>
+
+                <button class="pet-choice" data-pet="dog">
+                    <span>🐶</span>
+                    <strong>سگ</strong>
+                    <small>وفادار و بازیگوش</small>
+                </button>
+
+                <button class="pet-choice" data-pet="rabbit">
+                    <span>🐰</span>
+                    <strong>خرگوش</strong>
+                    <small>کوچولوی بامزه</small>
+                </button>
+            </div>
+        </section>
+
+        <section class="section shop">
+            <div class="section-title">
+                <div>
+                    <span class="eyebrow">خرید با سکه</span>
+                    <h2>فروشگاه پت‌لند 🛍️</h2>
+                </div>
+            </div>
+
+            <div class="shop-grid">
+                <article class="shop-item">
+                    <div class="item-icon">🥩</div>
+                    <h3>غذای مخصوص</h3>
+                    <p>گرسنگی را کاهش می‌دهد.</p>
+                    <button class="buy-btn" data-item="food" data-price="15">
+                        خرید · ۱۵ 🪙
+                    </button>
+                </article>
+
+                <article class="shop-item">
+                    <div class="item-icon">🧶</div>
+                    <h3>اسباب‌بازی</h3>
+                    <p>شادی حیوان را بیشتر می‌کند.</p>
+                    <button class="buy-btn" data-item="toy" data-price="20">
+                        خرید · ۲۰ 🪙
+                    </button>
+                </article>
+
+                <article class="shop-item">
+                    <div class="item-icon">🧴</div>
+                    <h3>شامپوی حیوان</h3>
+                    <p>تمیزی را افزایش می‌دهد.</p>
+                    <button class="buy-btn" data-item="shampoo" data-price="10">
+                        خرید · ۱۰ 🪙
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <section class="achievement">
+            <div class="achievement-icon">🏆</div>
+            <div>
+                <h3>مسیر قهرمانی</h3>
+                <p id="xpText">برای رسیدن به سطح بعدی به ۱۰۰ امتیاز نیاز داری.</p>
+                <div class="progress xp-progress">
+                    <div id="xpBar" class="progress-fill"></div>
+                </div>
+            </div>
+        </section>
+
+        <p id="notice" class="notice" role="status" aria-live="polite"></p>
+
+    </main>
+
+    <footer>
+        <p>🐾 پت‌لند؛ یک دوست کوچک، یک دنیای بزرگ!</p>
+        <small>بازی حیوان خانگی مجازی © ۱۴۰۵</small>
+    </footer>
+
+</body>
+</html>
